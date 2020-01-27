@@ -7,5 +7,5 @@ LDFLAGS := -X 'main.version=$(VERSION)'
 
 .PHONY: build
 build:
-	go build -ldflags "$(LDFLAGS)" -o $(BINDIR)/$(TARGET)
+	go build -ldflags "$(LDFLAGS)" -o $(BINDIR)/$(TARGET) cmd/gcf-deployer/main.go
 
